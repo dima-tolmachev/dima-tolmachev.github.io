@@ -1,0 +1,59 @@
+{
+    "programming-languages": [
+        {
+            "title": "TypeScript and JavaScript",
+            "picture": "./pics/pls/ts.svg"
+        },
+        {
+            "title": "Python",
+            "picture": "./pics/pls/python.svg"
+        },
+        {
+            "title": "C programming language",
+            "picture": "./pics/pls/c.svg"
+        },
+        {
+            "title": "Scheme (dialect of Lisp)",
+            "picture": "./pics/pls/scheme.svg"
+        }
+    ],
+    "technologies": [
+        {
+            "title": "Node JS (javascript runtime)",
+            "picture": "./pics/technologies/nodejs.svg"
+        },
+        
+        {
+            "title": "Express JS",
+            "picture": "./pics/technologies/express.svg"
+        },
+        {
+            "title": "Mongo DB (NO-SQL database)",
+            "picture": "./pics/technologies/mongo.svg"
+        },
+        {
+            "title": "Postgre (SQL database)",
+            "picture": "./pics/technologies/postgre.svg"
+        },
+        {
+            "title": "React JS",
+            "picture": "./pics/technologies/react.png"
+        },
+        {
+            "title": "Docker",
+            "picture": "./pics/technologies/docker.svg"
+        },
+        {
+            "title": "Ubuntu Server (UNIX based OS)",
+            "picture": "./pics/technologies/ubuntu.svg"
+        },
+        {
+            "title": "Git",
+            "picture": "./pics/technologies/git.svg"
+        },
+        {
+            "title": "NGINX",
+            "picture": "./pics/technologies/nginx.svg"
+        }
+    ]
+}

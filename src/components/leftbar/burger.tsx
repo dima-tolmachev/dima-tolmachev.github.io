@@ -4,20 +4,23 @@ import Carousel from "./cards/carousel";
 import Contacts from "./cards/contacts";
 import ResumeLink from "./cards/resumeLink";
 
-var example = {
-    title: "Node JS",
-    picture: "https://i.imgur.com/qkdpN.png",
+import data from '../../aboutme.json';
+
+type Item = {
+    title: string;
+    picture: string;
 };
 
-var exampleArray = [example, example, example, example, example,example,example,example,example,example,example,example,example,example,example,example,example,example,example,example,example,example,example, example, example, example, example, example, example, example,  example, example, example, example, example, example];
+const pls: Item[] = data["programming-languages"];
+const techs: Item[] = data["technologies"];
 
 class Burger extends Component {
     render() {
         return(
             <div className={"leftBar"}>
                 <Intruduction />
-                <Carousel title="Favorite languages" items={exampleArray} />
-                <Carousel title="I work with" items={exampleArray} />
+                <Carousel title="Favorite languages" items={pls} />
+                <Carousel title="Technologies I use" items={techs} />
                 <Contacts />
                 <ResumeLink />
             </div>

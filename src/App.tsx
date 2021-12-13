@@ -7,7 +7,7 @@ import Grid from './components/main/grid';
 function App() {
   return (
     <div className="App">
-      <div className="content" style={{ display: "flex", gap: "20px", width: "100%" }}>
+      <div className="content" style={{ display: "flex", gap: "10px", width: "100%" }}>
         <Burger />
         <br />
         <div style={{ width: "100%" }}>
