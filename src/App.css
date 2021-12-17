@@ -4,6 +4,10 @@ body {
   color: white;
 }
 
+* {
+  font-family: "Droid Sans", sans-serif;
+}
+
 .App {
   position: absolute;
   left: 0;

@@ -1,8 +1,8 @@
-import React from 'react';
 import './App.css'
 import Burger from './components/leftbar/burger';
-import Filter from './components/main/filter';
-import Grid from './components/main/grid';
+import Main from './components/main/main';
+import Details from './components/main/details';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,8 +11,12 @@ function App() {
         <Burger />
         <br />
         <div style={{ width: "100%" }}>
-          <Filter />
-          <Grid />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/details" element={<Details />} />
+            </Routes>
+          </BrowserRouter>
         </div>
       </div>
     </div>
