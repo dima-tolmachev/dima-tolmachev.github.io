@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { ChangeEvent, Component } from "react";
 import Filter from './filter';
 import Grid from './grid';
 import Details from "./details";
@@ -9,11 +9,11 @@ class Main extends Component {
         variant: 1
     }
 
-    variantChange = (e: any) => {
+    variantChange = (e: ChangeEvent<HTMLInputElement>) => {
         this.setState({ variant: parseInt(e.target.value) });
     }
 
-    swapContent = (e: any) => {
+    swapContent = (e: number) => {
         this.setState({ showMe: e });
     }
 
