@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Intruduction from "./cards/introduction";
 import Carousel from "./cards/carousel";
 import Contacts from "./cards/contacts";
-import ResumeLink from "./cards/resumeLink";
-
+//import ResumeLink from "./cards/resumeLink";
+//<ResumeLink />
 import data from '../../aboutme.json';
 
 type Item = {
@@ -22,7 +22,6 @@ class Burger extends Component {
                 <Carousel title="Favorite languages" items={pls} />
                 <Carousel title="Technologies I use" items={techs} />
                 <Contacts />
-                <ResumeLink />
             </div>
         );
     }

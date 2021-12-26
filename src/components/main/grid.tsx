@@ -17,6 +17,7 @@ type Project = {
     source: string;
     preview: string;
     type: number;
+    id: number;
 };
 
 class Grid extends Component<Props> {
@@ -38,7 +39,7 @@ class Grid extends Component<Props> {
         return (
             <div className="grid">
                 {projects.map((project, index) => 
-                    <Card onClick={() => this.details(`/details?project=${project.title}`)} sx={{ maxWidth: 345, backgroundColor: "#25272A", color: "white", borderRadius: "5px" }} key={index}>
+                    <Card onClick={() => this.details(`/details?projectId=${project.id}`)} sx={{ maxWidth: 345, backgroundColor: "#25272A", color: "white", borderRadius: "5px" }} key={index}>
                     <CardActionArea>
                       <CardMedia
                         component="img"
