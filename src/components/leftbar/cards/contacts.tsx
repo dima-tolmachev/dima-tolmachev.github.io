@@ -12,7 +12,7 @@ class Contacts extends Component {
 
             <div className="contactWay">
                 <img src="./pics/contacts/telegram.svg" alt="telegram logo/icon" />
-                <label style={{ fontSize: "1.15em" }}>@dimatolmachev</label>
+                <label style={{ fontSize: "1.15em" }}>dimatolmachev</label>
             </div>
         
         </div>

@@ -8,6 +8,7 @@ import { CardActionArea } from '@mui/material';
 
 type Props = {
     variant: number;
+    showDetails: Function;
 };
 
 type Project = {
@@ -34,12 +35,10 @@ class Grid extends Component<Props> {
             });
         }
 
-        console.log(projects);
-
         return (
             <div className="grid">
                 {projects.map((project, index) => 
-                    <Card onClick={() => this.details(`/details?projectId=${project.id}`)} sx={{ maxWidth: 345, backgroundColor: "#25272A", color: "white", borderRadius: "5px" }} key={index}>
+                    <Card className={"bubble"} onClick={() => { this.props.showDetails(project.id) }} sx={{ maxWidth: 345, backgroundColor: "#25272A", color: "white", borderRadius: "5px" }} key={index}>
                     <CardActionArea>
                       <CardMedia
                         component="img"

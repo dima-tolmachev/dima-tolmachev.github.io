@@ -2,16 +2,20 @@ import React from "react";
 import react, { Component } from "react";
 import data from '../../aboutme.json';
 
-class Details extends Component {
+type props = {
+    id: number;
+    goBack: Function;
+}
 
+class Details extends Component<props> {
     render() {
-        const projectId: string | null = new URLSearchParams(window.location.search).get("projectId");
+        const projectId: number = this.props.id;
         var legal: boolean = false;
         var info: any = {};
         
 
         data.projects.forEach(project => {
-            if (projectId != null && project.id === parseInt(projectId)) {
+            if (projectId != null && project.id === projectId) {
                 legal = true;
                 info = project;
             }
@@ -24,8 +28,8 @@ class Details extends Component {
             }
 
             return (
-                <div>
-                    <a style={{ fontSize: "20px", color:"white", float: "right" }} href="/">Go back</a>
+                <div className={"details"}>
+                    <label style={{ fontSize: "20px", borderBottom: "2px", borderBottomColor: "white", cursor: "pointer", color:"white", float: "right" }} onClick={() => {this.props.goBack()}}>Go back</label>
                     <h2>{info.title}</h2>
                     <p><b>Stack:</b> {info.stack.join(", ")}</p>
                     <p><b>Source code:</b> {element}</p>

@@ -4,6 +4,10 @@ body {
   color: white;
 }
 
+::-webkit-scrollbar {
+  width: 1px;
+}
+
 * {
   font-family: "Droid Sans", sans-serif;
 }
@@ -88,6 +92,15 @@ body {
   box-shadow:
     0 5px 10px rgba(0, 0, 0, 0.1),
     0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bubble, .details {
+  animation: animatedImage 0.15s linear;
+}
+
+@keyframes animatedImage {
+  0% { opacity: 0;}
+ 100% { opacity: 1;}
 }
 
 @media (max-width: 760px) {
