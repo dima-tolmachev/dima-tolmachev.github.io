@@ -6,7 +6,7 @@ class Intruduction extends Component {
             <div className="card">
                 <label style={{ fontSize: "5em"}}>Hello,</label>
                 <br />
-                <label style={{ fontSize: "1.15em"}}>I'm Dima, an 18 y.o. programmer from Moscow</label>                    
+                <label style={{ fontSize: "1.15em"}}>I'm Dima, a programmer from Moscow</label>                    
             </div>
         );
     };
